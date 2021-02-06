@@ -11,25 +11,23 @@ public class StepStoneAvailableITJobsPage extends StepStoneHomePage {
 
 	public StepStoneAvailableITJobsPage(WebDriver driver) {
 		super(driver);
-		
+
 	}
 
-	@FindBy (xpath = CLOSE_POPUP_WINDOW_XPATH)
+	@FindBy(xpath = CLOSE_POPUP_WINDOW_XPATH)
 	WebElement close;
-	
 
-	@FindBy (xpath = STEP_STONE_LOGO_XPATH)
+	@FindBy(xpath = STEP_STONE_LOGO_XPATH)
 	WebElement logo;
-	
-	
+
 	public StepStoneAvailableITJobsPage closePopUp() {
 		close.click();
 		return new StepStoneAvailableITJobsPage(driver);
 	}
-	
+
 	public StepStoneHomePage clickLogo() {
 		logo.click();
 		return new StepStoneHomePage(driver);
 	}
-	
+
 }

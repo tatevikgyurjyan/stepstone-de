@@ -7,9 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import static am.itu.qa.stepstone.feedback.page.StepStoneFeedbackPageConstants.*;
 import am.itu.qa.stepstone.home.page.StepStoneHomePage;
 
-public class StepStoneLeavingFeedbackPage extends StepStoneHomePage {
+public class StepStoneLeavingFeedbackOnRecruitersPage extends StepStoneHomePage {
 
-	public StepStoneLeavingFeedbackPage(WebDriver driver) {
+	public StepStoneLeavingFeedbackOnRecruitersPage(WebDriver driver) {
 		super(driver);
 	}
 
@@ -58,11 +58,11 @@ public class StepStoneLeavingFeedbackPage extends StepStoneHomePage {
 		nextBtn.click();
 	}
 
-	public StepStoneLeavingFeedbackPage typeFeedback(String textToType) {
+	public StepStoneLeavingFeedbackOnRecruitersPage typeFeedback(String textToType) {
 		feedbackTypeArea.sendKeys(textToType);
 		sendFeedback.click();
 		closeThanksMsg.click();
-		return new StepStoneLeavingFeedbackPage(driver);
+		return new StepStoneLeavingFeedbackOnRecruitersPage(driver);
 	}
 
 	public boolean isPostAdElementPresent() {

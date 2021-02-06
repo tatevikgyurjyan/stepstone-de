@@ -13,6 +13,9 @@ public class StepStoneFeedbackPage extends StepStoneHomePage{
 		super(driver);
 		
 	}
+	
+	@FindBy(xpath  = "//body")
+	WebElement pageBody;
 
 	@FindBy (xpath = SEARCH_SIMPLICITY_VERYGOOD_XPATH)
 	WebElement simplicityVerGood;
@@ -29,8 +32,14 @@ public class StepStoneFeedbackPage extends StepStoneHomePage{
 	@FindBy (xpath = SEND_FEEDBACK_BTN)
 	WebElement sendBtn;
 	
+	
+	public StepStoneFeedbackPage clickOnBody() {
+		pageBody.click();
+		return new StepStoneFeedbackPage(driver);
+	}
+	
 	public void leaveOpinionForSimplicity() {
-			
+		
 		simplicityVerGood.click();
 	}
 	public void leaveOpinionForDesign() {

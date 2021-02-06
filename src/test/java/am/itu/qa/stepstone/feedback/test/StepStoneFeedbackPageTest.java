@@ -19,6 +19,8 @@ public class StepStoneFeedbackPageTest extends StepStoneBaseTest {
 		StepStoneFeedbackPage feedbackPage = homePage.navigateToFeedbackPage();
 		Thread.sleep(8000);
 		
+		feedbackPage =  new StepStoneFeedbackPage(driver);
+		
 		//3. click on the "very good" btn for page simplicity
 		feedbackPage.leaveOpinionForSimplicity();
 		Thread.sleep(3000);

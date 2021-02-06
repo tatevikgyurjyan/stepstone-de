@@ -19,5 +19,5 @@ public class StepStoneHomePageConstants {
 	public static final String AVG_SALARY_EXPL_BTN_RIGHT_XPATH = "//button[@direction = 'right']";
 	public static final String COOK_SALARY_XPATH = "//h3[text() = '29,300 €']";
 	public static final String GIVE_US_FEEDBACK_XPATH = "//li/a[contains(@href, 'email.stepstone.com')]";
-	
+	 
 }

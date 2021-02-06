@@ -6,7 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import static am.itu.qa.stepstone.home.page.StepStoneHomePageConstants.*;
 import am.itu.qa.stepstone.base.page.StepStoneBasePage;
 import am.itu.qa.stepstone.feedback.page.StepStoneFeedbackPage;
-import am.itu.qa.stepstone.feedback.page.StepStoneLeavingFeedbackPage;
+import am.itu.qa.stepstone.feedback.page.StepStoneLeavingFeedbackOnRecruitersPage;
+import am.itu.qa.stepstone.recruiters.page.StepStoneRecruitersPage;
 import am.itu.qa.stepstone.salaryplanner.page.StepStoneSalaryPlannerPage;
 import am.itu.qa.stepstone.search.page.StepStoneAdvancedSearchPage;
 import am.itu.qa.stepstone.search.page.StepStoneAvailableITJobsPage;
@@ -91,9 +92,9 @@ public class StepStoneHomePage extends StepStoneBasePage {
 		return new StepStoneGermanHomePage(driver);
 	}
 
-	public StepStoneLeavingFeedbackPage clickRecruitersLink() {
+	public StepStoneLeavingFeedbackOnRecruitersPage clickRecruitersLink() {
 		recruiter.click();
-		return new StepStoneLeavingFeedbackPage(driver);
+		return new StepStoneLeavingFeedbackOnRecruitersPage(driver);
 	}
 
 	public StepStoneSalaryPlannerPage clickSalaryPlannerLink() {
@@ -119,5 +120,10 @@ public class StepStoneHomePage extends StepStoneBasePage {
 	public StepStoneFeedbackPage navigateToFeedbackPage() {
 		giveFeedback.click();
 		return new StepStoneFeedbackPage(driver);
+	}
+	
+	public StepStoneRecruitersPage clickOnRecruitersLink() {
+		recruiter.click();
+		return new StepStoneRecruitersPage(driver);
 	}
 }

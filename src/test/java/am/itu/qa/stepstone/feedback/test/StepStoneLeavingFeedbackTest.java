@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import am.itu.qa.stepstone.base.test.StepStoneBaseTest;
-import am.itu.qa.stepstone.feedback.page.StepStoneLeavingFeedbackPage;
+import am.itu.qa.stepstone.feedback.page.StepStoneLeavingFeedbackOnRecruitersPage;
 import am.itu.qa.stepstone.home.page.StepStoneGermanHomePage;
 import am.itu.qa.stepstone.home.page.StepStoneHomePage;
 
@@ -29,7 +29,7 @@ public class StepStoneLeavingFeedbackTest extends StepStoneBaseTest {
 		germanPage.changeLanguageToEnglish();
 
 		// 5.Go to Recruiter's page
-		StepStoneLeavingFeedbackPage feedBackPage = homePage.clickRecruitersLink();
+		StepStoneLeavingFeedbackOnRecruitersPage feedBackPage = homePage.clickRecruitersLink();
 		Thread.sleep(8000);
 
 		// 6.Open the Feedback area to leave a feedback for a page

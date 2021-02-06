@@ -61,9 +61,9 @@ public class StepStoneAdvancedSearchPage extends StepStoneHomePage {
 	@FindBy(xpath = CREATE_JOB_AGENT_BTN_XPATH)
 	WebElement sendEmail;
 
-	@FindBy (xpath = CLOSE_EMAIL_POPUP_XPATH)
+	@FindBy(xpath = CLOSE_EMAIL_POPUP_XPATH)
 	WebElement closePopup;
-	
+
 	public void advancedSearchForITJobs() throws InterruptedException {
 		Thread.sleep(2000);
 		it.click();

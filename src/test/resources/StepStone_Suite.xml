@@ -9,7 +9,7 @@
 			value="web.driver.chrome.driver"></parameter>
 		<classes>
 			<class
-				name="am.itu.qa.stepstone.feedback.test.StepStoneFeedbackPageTest" />
+				name="am.itu.qa.stepstone.recruiters.page.test.StepStoneRecruitersPageTest" />
 		</classes>
 	</test>
 </suite>
