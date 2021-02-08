@@ -25,5 +25,16 @@ public class StepStoneSearchesConstants {
 	public static final String WORK_EXPERIENCE_XPATH = "//a[@id = 'tglBtn_Experience']";
 	public static final String WITH_PROFESSIONAL_EXPERIENCE_XPATH = "//input[@id = 'cbox_90002_2']";
 	public static final String ADVANCED_SEARCH_BTN_XPATH = "//button[@id = 'AdvancedSearchButton']";
-
+	public static final String CLOSE_DESIGNER_SEARCH_POPUP = "//div[@class = 'modal-content modal-content_mex']//span[@title = 'close']";
+	public static final String FULL_TIME_KEYWORD_XPATH = "//span[text() = 'Full Time']";
+	public static final String SELECT_WORKPLACES_IN_GERMANY = "//select[contains(@class, 'sky-cr-filters__dropdown sky-cr-filters__dropdown--white sky-company-ranking')]";
+	public static final String GERMAN_CITY_OPTION_BEST_PLACES = "//option[@value = 'Best-places-to-work-in-Munich-2020']";
+	public static final String RYTE_COMPANY_XPATH = "//a[contains(@href, 'RYTE')]//img[@alt = 'logo of RYTE']";
+	public static final String SHOW_MORE_ABOUT_US_XPATH = "//p[contains(@class, 'at-card-read-more')]/span";
+	public static final String LEAVE_REVIEW_FOR_RYTE_XPATH = "//a[text() = 'Leave a review']";
+	public static final String CHOOSE_RYTE_LOCATION_XPATH = "//input[@class = 'react-autosuggest__input']";
+	public static final String LOCATION_MUNICH_XPATH = "//span[text() = 'Munich']";
+	public static final String CONTINUE_REVIEW_BTN = "//button[text() = 'Continue']";
+	public static final String RATE_CULTURE_AND_PEOPLE = "//label/input[@value = '5']";
+	
 }

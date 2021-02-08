@@ -11,7 +11,9 @@ import am.itu.qa.stepstone.recruiters.page.StepStoneRecruitersPage;
 import am.itu.qa.stepstone.salaryplanner.page.StepStoneSalaryPlannerPage;
 import am.itu.qa.stepstone.search.page.StepStoneAdvancedSearchPage;
 import am.itu.qa.stepstone.search.page.StepStoneAvailableITJobsPage;
+import am.itu.qa.stepstone.search.page.StepStoneBestWorkPlacesInMunichPage;
 import am.itu.qa.stepstone.search.page.StepStoneQAEngineerInMuenchenSearch;
+import am.itu.qa.stepstone.search.page.StepStoneSearchForDesignerPage;
 
 public class StepStoneHomePage extends StepStoneBasePage {
 
@@ -46,19 +48,31 @@ public class StepStoneHomePage extends StepStoneBasePage {
 
 	@FindBy(xpath = FOR_RECRUITERS_LINK_XPATH)
 	WebElement recruiter;
-	
-	@FindBy (xpath = SALARY_PLANNER_ICON_XPATH)
+
+	@FindBy(xpath = SALARY_PLANNER_ICON_XPATH)
 	WebElement salaryPlanner;
-	
-	@FindBy (xpath = AVG_SALARY_EXPL_BTN_RIGHT_XPATH)
+
+	@FindBy(xpath = AVG_SALARY_EXPL_BTN_RIGHT_XPATH)
 	WebElement rightBtn;
-	
-	@FindBy (xpath = COOK_SALARY_XPATH)
+
+	@FindBy(xpath = COOK_SALARY_XPATH)
 	WebElement cookSalary;
-	
-	@FindBy (xpath = GIVE_US_FEEDBACK_XPATH)
+
+	@FindBy(xpath = GIVE_US_FEEDBACK_XPATH)
 	WebElement giveFeedback;
-	
+
+	@FindBy(xpath = SEARCH_RADIUS_XPATH)
+	WebElement searchRadius;
+
+	@FindBy(xpath = SEARCH_RADIUS_10KM_XPATH)
+	WebElement searchRadius10;
+
+	@FindBy(xpath = FULL_TIME_JOB_TOSEARCH)
+	WebElement fullTimeJob;
+
+	@FindBy(xpath = STEPSTONE_BESTWORKPLACES_XPATH)
+	WebElement bestWorkPlaces;
+
 	public StepStoneHomePage acceptCookies() {
 		cookies.click();
 		return new StepStoneHomePage(driver);
@@ -101,29 +115,56 @@ public class StepStoneHomePage extends StepStoneBasePage {
 		salaryPlanner.click();
 		return new StepStoneSalaryPlannerPage(driver);
 	}
-	
+
 	public void exploreAvgSalaryInGermany() {
 		rightBtn.click();
 		rightBtn.click();
 		rightBtn.click();
 	}
-	
+
 	public boolean isCookSalaryDisplayed() {
 		return cookSalary.isDisplayed();
 	}
-	
+
 	public StepStoneAdvancedSearchPage clickAdvancedSearchIcon() {
 		advancedSearch.click();
 		return new StepStoneAdvancedSearchPage(driver);
 	}
-	
+
 	public StepStoneFeedbackPage navigateToFeedbackPage() {
 		giveFeedback.click();
 		return new StepStoneFeedbackPage(driver);
 	}
-	
+
 	public StepStoneRecruitersPage clickOnRecruitersLink() {
 		recruiter.click();
 		return new StepStoneRecruitersPage(driver);
+	}
+
+	public void searchForDesigner(String designerJob) {
+		jobSearch.sendKeys(designerJob);
+	}
+
+	public void searchForCity(String typeCity) {
+		citySearch.sendKeys(typeCity);
+	}
+
+	public void changeJobSearchRadius() {
+		searchRadius.click();
+		searchRadius10.click();
+	}
+
+	public void clickFullTimeJob() {
+		fullTimeJob.click();
+	}
+
+	public StepStoneSearchForDesignerPage clickOnFind() {
+		find.click();
+		return new StepStoneSearchForDesignerPage(driver);
+	}
+
+	public StepStoneBestWorkPlacesInMunichPage clickOnBestWorkplaces() {
+		bestWorkPlaces.click();
+		return new StepStoneBestWorkPlacesInMunichPage(driver);
 	}
 }
