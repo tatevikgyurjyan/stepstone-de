@@ -25,9 +25,9 @@ public class StepStoneBaseTest {
 		driver.manage().window().maximize();
 	}
 
-	/*@AfterClass
+	@AfterClass
 	public void afterTest() {
 
 		driver.quit();
-	}*/
+	}
 }

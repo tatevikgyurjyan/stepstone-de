@@ -30,8 +30,6 @@ public class StepStoneLeaveReviewPage extends StepStoneSearchResultPageRYTE {
 		location.sendKeys(cityName);
 		location.click();
 		location.sendKeys(Keys.ENTER);
-		// munich.click();*/
-		continueReview.click();
 	}
 
 	public void continueReview() {
