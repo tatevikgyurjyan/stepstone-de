@@ -15,7 +15,7 @@ public class StepStoneBaseTest {
 	@BeforeTest
 	public void setBrowser(String browser, String driverPath, String driverType) {
 
-		System.setProperty("driverPath", "driverType");
+		System.setProperty(driverPath, driverType);
 		if (browser.equals("chrome")) {
 			driver = new ChromeDriver();
 		} else if (browser.equals("firefox")) {

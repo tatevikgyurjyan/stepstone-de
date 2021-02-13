@@ -37,4 +37,5 @@ public class StepStoneSearchesConstants {
 	public static final String CONTINUE_REVIEW_BTN = "//button[text() = 'Continue']";
 	public static final String RATE_CULTURE_AND_PEOPLE = "//label/input[@value = '5']";
 	
+	
 }

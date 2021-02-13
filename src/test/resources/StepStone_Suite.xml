@@ -6,7 +6,7 @@
 		<parameter name="driverPath"
 			value="/home/tatevik/chromedriver"></parameter>
 		<parameter name="driverType"
-			value="web.driver.chrome.driver"></parameter>
+			value="webdriver.chrome.driver"></parameter>
 		<classes>
 			<class
 				name="am.itu.qa.stepstone.search.test.StepStoneBestWorkPlacesPageTest" />
