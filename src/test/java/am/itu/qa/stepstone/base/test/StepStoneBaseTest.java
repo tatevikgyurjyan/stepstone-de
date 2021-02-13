@@ -23,6 +23,7 @@ public class StepStoneBaseTest {
 		if (browser.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("start-maximized"); // open Browser in maximized mode
+			options.addArguments("--headless"); //run browser headlessly
 			options.addArguments("disable-infobars"); // disabling infobars
 			options.addArguments("--disable-extensions"); // disabling extensions
 			options.addArguments("--disable-gpu"); // applicable to windows os only
