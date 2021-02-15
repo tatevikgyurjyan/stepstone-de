@@ -36,6 +36,12 @@ public class StepStoneSearchesConstants {
 	public static final String LOCATION_MUNICH_XPATH = "//span[text() = 'Munich']";
 	public static final String CONTINUE_REVIEW_BTN = "//button[text() = 'Continue']";
 	public static final String RATE_CULTURE_AND_PEOPLE = "//label/input[@value = '5']";
+	public static final String BMW_XPATH = "//a[contains(@href, 'stepstone.de/cmp/en/BMW')]";
+	public static final String BWM_VIDEO_PLAY_BTN_XPATH = "//div[contains(@class, 'play-button')]";
+	public static final String BMW_PAGE_LOGO_XPATH = "//img[@class = 'grp-header__logo' and @alt = 'BMW']";
+			//"//a[@href='/de/de.html']/img[@class = 'grp-header__logo']";
+	
+	public static final String BMW_PAGE_LINK_XPATH = "//div[contains(@class, 'header')]//a[@href='https://www.bmwgroup.jobs/karriere']";
 	
 	
 }

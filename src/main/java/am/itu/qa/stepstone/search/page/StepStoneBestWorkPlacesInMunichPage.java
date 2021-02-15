@@ -21,6 +21,9 @@ public class StepStoneBestWorkPlacesInMunichPage extends StepStoneHomePage {
 
 	@FindBy(xpath = RYTE_COMPANY_XPATH)
 	WebElement ryte;
+	
+	@FindBy (xpath = BMW_XPATH)
+	WebElement bmw;
 
 	public void selecCityFortBestWorkPlaces() {
 		citySelect.click();
@@ -30,6 +33,11 @@ public class StepStoneBestWorkPlacesInMunichPage extends StepStoneHomePage {
 	public StepStoneSearchResultPageRYTE clickOnRyte() {
 		ryte.click();
 		return new StepStoneSearchResultPageRYTE(driver);
+	}
+	
+	public StepStoneSearchResultBMW clickOnBMWLink() {
+		bmw.click();
+		return new StepStoneSearchResultBMW(driver);
 	}
 
 }

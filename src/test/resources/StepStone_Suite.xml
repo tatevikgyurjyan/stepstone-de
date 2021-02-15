@@ -5,11 +5,10 @@
 		<parameter name="browser" value="chrome" />
 		<parameter name="driverPath"
 			value="/home/tatevik/chromedriver"></parameter>
-		<parameter name="driverType"
-			value="webdriver.chrome.driver"></parameter>
+		<parameter name="driverType" value="webdriver.chrome.driver"></parameter>
 		<classes>
 			<class
-				name="am.itu.qa.stepstone.search.test.StepStoneBestWorkPlacesPageTest" />
+				name="am.itu.qa.stepstone.search.test.StepStoneNavigateBMWPageTest" />
 		</classes>
 	</test>
 </suite>
