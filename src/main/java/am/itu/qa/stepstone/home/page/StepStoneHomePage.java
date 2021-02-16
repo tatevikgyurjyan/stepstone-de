@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import static am.itu.qa.stepstone.home.page.StepStoneHomePageConstants.*;
+
+import am.itu.qa.stepstone.about.page.StepStoneAboutPage;
 import am.itu.qa.stepstone.base.page.StepStoneBasePage;
 import am.itu.qa.stepstone.feedback.page.StepStoneFeedbackPage;
 import am.itu.qa.stepstone.feedback.page.StepStoneLeavingFeedbackOnRecruitersPage;
@@ -73,6 +75,9 @@ public class StepStoneHomePage extends StepStoneBasePage {
 	@FindBy(xpath = STEPSTONE_BESTWORKPLACES_XPATH)
 	WebElement bestWorkPlaces;
 
+	@FindBy(xpath = WHO_IS_STEPSTONE_XPATH)
+	WebElement whoIsSS;
+	
 	public StepStoneHomePage acceptCookies() {
 		cookies.click();
 		return new StepStoneHomePage(driver);
@@ -166,5 +171,10 @@ public class StepStoneHomePage extends StepStoneBasePage {
 	public StepStoneBestWorkPlacesInMunichPage clickOnBestWorkplaces() {
 		bestWorkPlaces.click();
 		return new StepStoneBestWorkPlacesInMunichPage(driver);
+	}
+	
+	public StepStoneAboutPage clickOnWhoIsStepstone() {
+		whoIsSS.click();
+		return new StepStoneAboutPage(driver);
 	}
 }

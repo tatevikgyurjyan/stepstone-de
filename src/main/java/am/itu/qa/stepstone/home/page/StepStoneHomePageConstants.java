@@ -23,5 +23,5 @@ public class StepStoneHomePageConstants {
 	public static final String SEARCH_RADIUS_10KM_XPATH = "//a[text() = '10km']";
 	public static final String FULL_TIME_JOB_TOSEARCH = "//input[@id = 'ch1']"; 
 	public static final String STEPSTONE_BESTWORKPLACES_XPATH = "//span[text() = 'Best workplaces']";
-	
+	public static final String WHO_IS_STEPSTONE_XPATH = "//a[@href='/About-Us/']";
 }
