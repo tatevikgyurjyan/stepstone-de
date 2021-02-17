@@ -19,6 +19,9 @@ public class StepStoneManagementPage extends StepStoneAboutPage{
 	@FindBy (xpath = STEPSTONE_CEO_XPATH)
 	WebElement ceo;
 	
+	@FindBy (xpath = STEP_STONE_CONTACT_XPATH)
+	WebElement contact;
+	
 	public void dismissCookies() {
 		dismiss.click();
 	}
@@ -28,4 +31,9 @@ public class StepStoneManagementPage extends StepStoneAboutPage{
 		return new StepStoneCEOPage(driver);
 	}
 	
+	public StepStoneContactsPage clickOnContactLink() {
+		contact.click();
+		return new StepStoneContactsPage(driver);
+		
+	}
 }

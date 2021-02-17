@@ -16,7 +16,15 @@ public class StepStoneAboutTimeLinePage extends StepStoneAboutPage{
 	@FindBy (xpath = HEADING_TIMELINE_XPATH)
 	WebElement timeline;
 	
+	@FindBy (xpath = MANAGEMENT_XPATH)
+	WebElement management;
+	
 	public boolean isHeadingTimelinePresent() {
 		return timeline.isDisplayed();
+	}
+	
+	public StepStoneManagementPage clickOnManagementLink() {
+		management.click();
+		return new StepStoneManagementPage(driver);
 	}
 }
