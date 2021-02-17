@@ -8,6 +8,6 @@ The project "stepstone-de" is considered to automate written end-to-end test cas
 The project was written using Selenium WebDriver, testng technologies in Java. 
 One should launch the code using the following commands from the command line:
     
-              maven clear install 
+              mvn clear install 
               
               
