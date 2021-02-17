@@ -21,7 +21,7 @@ public class StepStoneAboutUsPageTest extends StepStoneBaseTest {
 		StepStoneAboutPage aboutPage = homePage.clickOnWhoIsStepstone();
 		Thread.sleep(8000);
 
-		// 3. Clicks on "Our History"
+		// 3. Dismiss the cookies and clicks on "Our History"
 		aboutPage.dismissCookies();
 		StepStoneAboutTimeLinePage timeLinePage = aboutPage.clickOnOurHistory();
 		Thread.sleep(5000);
