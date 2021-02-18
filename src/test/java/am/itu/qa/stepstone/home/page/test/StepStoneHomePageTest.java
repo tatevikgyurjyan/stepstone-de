@@ -27,7 +27,7 @@ public class StepStoneHomePageTest extends StepStoneBaseTest{
 		System.out.println("     ");
 		System.out.println("--3--CLOSES THROWN POPUP WINDOW");
 		System.out.println("     ");
-		itJobs.closePopUp();
+		//itJobs.closePopUp();
 		Thread.sleep(2000);
 		
 		System.out.println("     ");
