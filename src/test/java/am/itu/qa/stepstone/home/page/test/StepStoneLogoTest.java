@@ -25,7 +25,7 @@ public class StepStoneLogoTest extends StepStoneBaseTest {
 		Thread.sleep(2000);
 		// 4. Clicks on Logo
 		itJobs.clickLogo();
-		// 5. Assures that an element "Advance Search" is displayed
+		// 5. Assures that an element "Advanced Search" is displayed
 		Assert.assertTrue(homePage.findAdvancedSearch());
 	}
 }
