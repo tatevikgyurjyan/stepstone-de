@@ -10,68 +10,108 @@ public class StepStoneSalaryPlanningTest extends StepStoneBaseTest {
 
 	@Test
 	public void planSalary() throws InterruptedException {
-		// 1. Accepts cookies
+		System.out.println("     ");
+		System.out.println("--1--ACCEPTS COOKIES");
+		System.out.println("     ");
 		StepStoneHomePage homePage = new StepStoneHomePage(driver);
 		homePage.acceptCookies();
 
-		// 2. Click on "Start the Salary Planner" icon
+		System.out.println("     ");
+		System.out.println("--2--CLICKS ON 'START SALARY PLANNER' ICON");
+		System.out.println("     ");
 		Thread.sleep(4000);
 		StepStoneSalaryPlannerPage plannerPage = homePage.clickSalaryPlannerLink();
 
-		// 3. Fill permanent position in last 12 months
-		Thread.sleep(4000);
+		System.out.println("     ");
+		System.out.println("--3--FILLS PERMANENT POSITION IN LAST 12 MONTHS");
+		System.out.println("     ");
+		Thread.sleep(9000);
 		plannerPage.FullTime();
 
-		// 4. Fill annual gross base salary
+		System.out.println("     ");
+		System.out.println("--4--FILLS ANNUAL GROSS BASE SALARY");
+		System.out.println("     ");
 		Thread.sleep(4000);
 		plannerPage.annualSalary("60000");
 
-		// 5. Fill variable payments
+		System.out.println("     ");
+		System.out.println("--5--FILLS VARIABLE PAYMENTS");
+		System.out.println("     ");
 		plannerPage.annualBonuses("5000");
 
-		// 6. How satisfied with current job?
+		System.out.println("     ");
+		System.out.println("--6--CHOOSES HOW SATICFIED IS WITH CURRENT JOB");
+		System.out.println("     ");
 		plannerPage.satisfiedWithPrevJob();
 
-		// 7. Last job title
+		System.out.println("     ");
+		System.out.println("--7--SELECTS LAST JOB TITLE");
+		System.out.println("     ");
 		plannerPage.jobTitle("Engineer");
 
-		// 8. Fill qualifications
+		System.out.println("     ");
+		System.out.println("--8--FILLS QUALIFICATIONS");
+		System.out.println("     ");
 		plannerPage.qualification("Engineering");
 
-		// 9. Years of experience
+		System.out.println("     ");
+		System.out.println("--9--SELECTS YEARS OF EXPERIENCE");
+		System.out.println("     ");
 		plannerPage.experience();
 
-		// 10. No personnel responsibility
+		System.out.println("     ");
+		System.out.println("--10--NO PERSONNEL RESPONSIBILITY");
+		System.out.println("     ");
 		plannerPage.noPersonnelResp();
 
-		// 11. No Budget responsibility
+		System.out.println("     ");
+		System.out.println("--11--NO BUDGET RESPONSIBILITY");
+		System.out.println("     ");
 		plannerPage.noBudgetResp();
 
-		// 12. Last employer city
+		System.out.println("     ");
+		System.out.println("--12--LAST EMPLOYER CITY");
+		System.out.println("     ");
 		plannerPage.employerLocation("Munich, Germany");
 
-		// 13. Employer's business
+		System.out.println("     ");
+		System.out.println("--13--EMPLOYER'S BUSINESS");
+		System.out.println("     ");
 		plannerPage.fieldOfBusiness("Banken");
 
-		// 14.Number of employees in the company
+		System.out.println("     ");
+		System.out.println("--14--NUMBER OF EMPLOYEES IN THE COMPANY");
+		System.out.println("     ");
 		plannerPage.numberOfEmplyees();
 
-		// 15.Fill highest degree of education
+		System.out.println("     ");
+		System.out.println("--15--HIGHEST DEGREE OF EDUCATION");
+		System.out.println("     ");
 		plannerPage.empEducation();
 
-		// 16. Field of Studies
+		System.out.println("     ");
+		System.out.println("--16--FIELD OF STUDIES");
+		System.out.println("     ");
 		plannerPage.fieldOfStudies();
 
-		// 17.University where studied
+		System.out.println("     ");
+		System.out.println("--17--UNIVERSITY WHERE STUDIED");
+		System.out.println("     ");
 		plannerPage.empEducation();
 
-		// 18. Date of birth
+		System.out.println("     ");
+		System.out.println("--18--DATE OF BIRTH");
+		System.out.println("     ");
 		plannerPage.empBirthday();
 
-		// 19. Employee gender
+		System.out.println("     ");
+		System.out.println("--19--EMPLOYEE GENDER");
+		System.out.println("     ");
 		plannerPage.femaleGender();
 
-		// 20. Register to generate personal salary planner
+		System.out.println("     ");
+		System.out.println("--20--REGISTER TO GENERATE PERSONAL SALARY PLANNER");
+		System.out.println("     ");
 		plannerPage.registerToPlanSalary();
 	}
 }

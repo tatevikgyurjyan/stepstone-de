@@ -89,6 +89,7 @@ public class StepStoneSalaryPlannerPage extends StepStoneHomePage {
 	
 	public void FullTime() {
 		fullTimeJob.click();
+		fullTimeJob.click();
 	}
 	
 	public void annualSalary(String salary) {

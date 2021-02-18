@@ -2,7 +2,7 @@ package am.itu.qa.stepstone.salaryplanner.page;
 
 public class StepStoneSalaryPlannerConstants {
 	
-	public static final String FULL_TIME_XPATH = "//label[text() ='Part-time']";
+	public static final String FULL_TIME_XPATH = "//label[contains(text(), 'Full-time')]";
 	public static final String ANNUAL_GROSS_SALARY_XPATH = "//input[@name = 'SCT_ANNUAL_GROSS_BASIC_SALARY']";
 	public static final String ANNUAL_GROSS_BENEFITS = "//input[@name = 'SCT_ANNUAL_GROSS_BENEFITS']";
 	public static final String SATISFIED_WITH_CURRENT_SALARY_XPATH = "//font[text() = 'Satisfied']";
