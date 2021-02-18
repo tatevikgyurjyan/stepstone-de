@@ -8,7 +8,7 @@
 		<parameter name="driverType" value="webdriver.chrome.driver"></parameter>
 		<classes>
 			<class
-				name="am.itu.qa.stepstone.feedback.test.StepStoneFeedbackTest" />
+				name="am.itu.qa.stepstone.aboutus.page.test.StepStoneAboutTest" />
 		</classes>
 	</test>
 </suite>
