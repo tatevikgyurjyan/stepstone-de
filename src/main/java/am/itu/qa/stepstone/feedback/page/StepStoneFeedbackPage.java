@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import static am.itu.qa.stepstone.feedback.page.StepStoneFeedbackPageConstants.*;
+import static am.itu.qa.stepstone.search.page.StepStoneSearchesConstants.STEP_STONE_LOGO_XPATH;
+
 import am.itu.qa.stepstone.home.page.StepStoneHomePage;
 
 public class StepStoneFeedbackPage extends StepStoneHomePage{
@@ -32,6 +34,8 @@ public class StepStoneFeedbackPage extends StepStoneHomePage{
 	@FindBy (xpath = SEND_FEEDBACK_BTN)
 	WebElement sendBtn;
 	
+	@FindBy(xpath = STEP_STONE_LOGO_XPATH)
+	WebElement logo;
 	
 	public StepStoneFeedbackPage clickOnBody() {
 		pageBody.click();
@@ -58,5 +62,10 @@ public class StepStoneFeedbackPage extends StepStoneHomePage{
 		commentArea.sendKeys(comment);
 		Thread.sleep(6000);
 		sendBtn.submit();
+	}
+	
+	public StepStoneHomePage clickLogo() {
+		logo.click();
+		return new StepStoneHomePage(driver);
 	}
 }

@@ -46,7 +46,7 @@ public class StepStoneAboutTest extends StepStoneBaseTest{
 		StepStoneContactsPage contactsPage = management.clickOnContactLink();
 		Thread.sleep(3000);
 		
-		System.out.println("--8--Clicks on 'Finding Job' to receive notifications about the appropriate jobe");
+		System.out.println("--8--Clicks on 'Finding Job' to receive notifications about the appropriate job");
 		contactsPage.chooseFindingJobToReceiveMoreInformation();
 		Thread.sleep(3000);
 		

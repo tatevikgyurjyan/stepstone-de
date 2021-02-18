@@ -13,7 +13,7 @@ public class StepStoneFeedbackPageConstants {
 	public static final String OPINION_MESSAGE_CLOSE_XPATH = "//img[contains(@src, 'close-btn')]";
 	public static final String POST_AD_ELE_XPATH = "//div[@class = 'mex-card__footer']//a[text() = 'Post a job ad']";
 	public static final String SEARCH_SIMPLICITY_VERYGOOD_XPATH = "//input[@id='FACETED_SEARCH_1_4']";
-	public static final String DESIGN_VERYGOOD_XPATH = "//input[@id = 'FACETED_SEARCH_1_4']";
+	public static final String DESIGN_VERYGOOD_XPATH = "//input[@id = 'FACETED_SEARCH_2_4']";
 	public static final String RESULTS_RELEVANCE_XPATH = "//input[@id = 'FACETED_SEARCH_3_3']";
 	public static final String COMMENT_AREA_XPATH = "//textarea[@id = 'REMARKS']";
 	public static final String SEND_FEEDBACK_BTN = "//a[@id = 'NAV_BUT_ABSENDEN']";
