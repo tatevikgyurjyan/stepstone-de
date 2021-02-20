@@ -15,7 +15,8 @@ public class StepStoneSalaryPlanningTest extends StepStoneBaseTest {
 		System.out.println("     ");
 		StepStoneHomePage homePage = new StepStoneHomePage(driver);
 		homePage.acceptCookies();
-
+		Thread.sleep(2000);
+		
 		System.out.println("     ");
 		System.out.println("--2--CLICKS ON 'START SALARY PLANNER' ICON");
 		System.out.println("     ");
