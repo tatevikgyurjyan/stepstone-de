@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import am.itu.qa.stepstone.base.test.StepStoneBaseTest;
 import am.itu.qa.stepstone.home.page.StepStoneHomePage;
+import am.itu.qa.stepstone.recruiters.page.StepStonePrivacyPolicyPage;
 //import am.itu.qa.stepstone.recruiters.page.StepStonePrivacyPolicyPage;
 import am.itu.qa.stepstone.recruiters.page.StepStoneRecruitersContactUsPage;
 import am.itu.qa.stepstone.recruiters.page.StepStoneRecruitersPage;
@@ -27,15 +28,17 @@ public class StepStoneRecruitersPageTest extends StepStoneBaseTest {
 		StepStoneRecruitersContactUsPage contactPage = newsPage.clickOnContactUs();
 		Assert.assertTrue(contactPage.isContactUsLinkPresent());
 
-		/*
-		 * // 4. Click on "yes" checkbox to accept the PP, after click on
-		 * "Privacy Policy" to decide whether to subscribe on the web page // or not
-		 * newsPage.acceptPrivacyPolicy(); StepStonePrivacyPolicyPage ppPage =
-		 * newsPage.clickOnPrivacyLink(); Thread.sleep(3000);
-		 * 
-		 * //5. Assert that PP article is displayed
-		 * Assert.assertTrue((ppPage.isPPArticleHeadingDisplayed()));
-		 */
+		
+		 // 4. Click on "yes" checkbox to accept the PP, after click on
+		 //"Privacy Policy" to decide whether to subscribe on the web page // or not
+		 StepStonePrivacyPolicyPage ppPage = newsPage.clickOnPrivacyLink();
+		 Thread.sleep(6000);
+		 newsPage.clickOnPrivacyLink(); 
+		 Thread.sleep(3000);
+		 
+		 //5. Assert that PP article is displayed
+		 Assert.assertTrue((ppPage.isPPArticleHeadingDisplayed()));
+		 
 
 	}
 }

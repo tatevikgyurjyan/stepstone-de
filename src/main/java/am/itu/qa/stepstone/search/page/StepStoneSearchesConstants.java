@@ -39,8 +39,6 @@ public class StepStoneSearchesConstants {
 	public static final String BMW_XPATH = "//a[contains(@href, 'stepstone.de/cmp/en/BMW')]";
 	public static final String BWM_VIDEO_PLAY_BTN_XPATH = "//div[contains(@class, 'play-button')]";
 	public static final String BMW_PAGE_LOGO_XPATH = "//img[@class = 'grp-header__logo' and @alt = 'BMW']";
-			//"//a[@href='/de/de.html']/img[@class = 'grp-header__logo']";
-	
 	public static final String BMW_PAGE_LINK_XPATH = "//div[contains(@class, 'header')]//a[@href='https://www.bmwgroup.jobs/karriere']";
 	
 	

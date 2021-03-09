@@ -6,7 +6,7 @@ import am.itu.qa.stepstone.base.test.StepStoneBaseTest;
 import am.itu.qa.stepstone.home.page.StepStoneHomePage;
 import am.itu.qa.stepstone.salaryplanner.page.StepStoneSalaryPlannerPage;
 
-public class StepStoneSalaryPlanningTest extends StepStoneBaseTest {
+public class StepStoneSalaryPlanningMainTest extends StepStoneBaseTest {
 
 	@Test
 	public void planSalary() throws InterruptedException {

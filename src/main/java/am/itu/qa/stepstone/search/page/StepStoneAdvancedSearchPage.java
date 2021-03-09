@@ -64,33 +64,67 @@ public class StepStoneAdvancedSearchPage extends StepStoneHomePage {
 	@FindBy(xpath = CLOSE_EMAIL_POPUP_XPATH)
 	WebElement closePopup;
 
-	public void advancedSearchForITJobs() throws InterruptedException {
+	public void selectsIT() throws InterruptedException {
 		Thread.sleep(2000);
 		it.click();
 		Thread.sleep(2000);
+	}
+	public void selectQA() throws InterruptedException {
 		qa.click();
 		Thread.sleep(2000);
+	}
+		
+	public void selectCountry() throws InterruptedException {
 		country.click();
 		Thread.sleep(2000);
+	}
+		
+	public void selectCity() throws InterruptedException {
 		city.click();
 		Thread.sleep(2000);
+	}
+	
+	public void selectRegion() throws InterruptedException {	
 		region.click();
 		Thread.sleep(2000);
+	}
+	public void selectEmploymentType() throws InterruptedException {	
 		employmentType.click();
 		Thread.sleep(2000);
+	}
+	
+	public void selectSolidEmployee() throws InterruptedException {	
 		solidEmp.click();
 		Thread.sleep(2000);
-		workingType.click();
+	}
+	
+	public void selectWorkingType() throws InterruptedException {
+	    workingType.click();
 		Thread.sleep(2000);
+	}
+		
+	public void selectHomeOffice() throws InterruptedException {
 		homeOffice.click();
 		Thread.sleep(2000);
-		fieldToWork.click();
+	}
+	
+	public void selectFieldToWork() throws InterruptedException {
+	    fieldToWork.click();
 		Thread.sleep(2000);
+	}
+	
+	public void selectITField() throws InterruptedException {
 		fieldIT.click();
 		Thread.sleep(2000);
+	}
+	
+	public void selectWorkExperience() throws InterruptedException {
 		workExp.click();
 		Thread.sleep(2000);
-		profExp.click();
+}
+		
+   	public void selectProfessionalExperience() throws InterruptedException {
+   		profExp.click();
 		Thread.sleep(2000);
 	}
 

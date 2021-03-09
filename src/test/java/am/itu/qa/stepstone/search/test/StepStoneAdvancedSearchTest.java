@@ -19,7 +19,7 @@ public class StepStoneAdvancedSearchTest extends StepStoneBaseTest {
 		StepStoneAdvancedSearchPage advSearch = homePage.clickAdvancedSearchIcon();
 
 		// 3. Click all the buttons for detailed search
-		advSearch.advancedSearchForITJobs();
+		advSearch.selectITField();
 		advSearch.clickSearchBtn();
 		Thread.sleep(2000);
 		advSearch.typeEmailToReceiveJobOffers("tgyurjyan@yahoo.com");

@@ -11,7 +11,7 @@ import am.itu.qa.stepstone.about.page.StepStoneManagementPage;
 import am.itu.qa.stepstone.base.test.StepStoneBaseTest;
 import am.itu.qa.stepstone.home.page.StepStoneHomePage;
 
-public class StepStoneAboutTest extends StepStoneBaseTest{
+public class StepStoneAboutMainTest extends StepStoneBaseTest{
 
 	@Test
 	public void readAboutInfo() throws InterruptedException {

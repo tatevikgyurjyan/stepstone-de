@@ -19,6 +19,15 @@ public class StepStoneAvailableITJobsPage extends StepStoneHomePage {
 
 	@FindBy(xpath = STEP_STONE_LOGO_XPATH)
 	WebElement logo;
+	
+	@FindBy(xpath = STEP_STONE_SEND_EMAIL_FOR_QA_XPATH)
+	WebElement emailInput;
+
+	@FindBy(xpath = CREATE_JOB_AGENT_BTN_XPATH)
+	WebElement sendEmail;
+
+	@FindBy(xpath = CLOSE_EMAIL_POPUP_XPATH)
+	WebElement closePopup;
 
 	public StepStoneAvailableITJobsPage closePopUp() {
 		close.click();
@@ -28,6 +37,16 @@ public class StepStoneAvailableITJobsPage extends StepStoneHomePage {
 	public StepStoneHomePage clickLogo() {
 		logo.click();
 		return new StepStoneHomePage(driver);
+	}
+	
+	public void typeEmailToReceiveJobOffers(String email) throws InterruptedException {
+		emailInput.click();
+		emailInput.sendKeys(email);
+		Thread.sleep(2000);
+		sendEmail.submit();
+		Thread.sleep(2000);
+		closePopup.click();
+		Thread.sleep(2000);
 	}
 
 }

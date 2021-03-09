@@ -8,7 +8,7 @@ import am.itu.qa.stepstone.feedback.page.StepStoneLeavingFeedbackOnRecruitersPag
 import am.itu.qa.stepstone.home.page.StepStoneGermanHomePage;
 import am.itu.qa.stepstone.home.page.StepStoneHomePage;
 
-public class StepStoneRecruitersFeedbackPageTest extends StepStoneBaseTest{
+public class StepStoneRecruitersFeedbackPageMainTest extends StepStoneBaseTest{
 
 	@Test
 	public void leaveFeedbackInRecruitersPage() throws InterruptedException {

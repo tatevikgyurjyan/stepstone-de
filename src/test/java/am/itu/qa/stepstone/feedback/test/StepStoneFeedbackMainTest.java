@@ -6,7 +6,7 @@ import am.itu.qa.stepstone.base.test.StepStoneBaseTest;
 import am.itu.qa.stepstone.feedback.page.StepStoneFeedbackPage;
 import am.itu.qa.stepstone.home.page.StepStoneHomePage;
 
-public class StepStoneFeedbackTest extends StepStoneBaseTest {
+public class StepStoneFeedbackMainTest extends StepStoneBaseTest {
 
 	@Test(priority = 0)
 	public void leaveFeedbackForStepStonePage() throws InterruptedException {

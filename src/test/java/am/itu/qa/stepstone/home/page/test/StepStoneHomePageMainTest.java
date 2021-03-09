@@ -7,7 +7,7 @@ import am.itu.qa.stepstone.base.test.StepStoneBaseTest;
 import am.itu.qa.stepstone.home.page.StepStoneHomePage;
 import am.itu.qa.stepstone.search.page.StepStoneAvailableITJobsPage;
 
-public class StepStoneHomePageTest extends StepStoneBaseTest{
+public class StepStoneHomePageMainTest extends StepStoneBaseTest{
 	
 	@Test
 	public void exploreGermanSalaries() throws InterruptedException {
